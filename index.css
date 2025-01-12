@@ -1,0 +1,28 @@
+h1{
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    
+    background-color: darkblue;
+    opacity: 0.8;
+    transition: background-color 0.5s ease;
+    transform: scale(1.4);
+    ;
+}
+button:active {
+    opacity: 0.2;
+    transform: scale(0.5);
+    
+}
