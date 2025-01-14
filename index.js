@@ -132,6 +132,17 @@ function calculator(){
 }
 }
 //---------------------------------------------------------------------
+//love
+function love(){
+    let status = true
+    while(status){
+        love = prompt('Do you love me?')
+        if (love === 'yes' || love === 'Yes' || love === 'YES'){
+            alert("I love you too mua mua mua mua")
+            status = false
+        }
+    }
+}
 for (let i = 0; i<9; i++) {
 document.getElementById("score").onclick = function() {
     score()
@@ -153,5 +164,8 @@ document.getElementById("Zero").onclick = function(){
 }
 document.getElementById("calculator").onclick = function(){
     calculator()
+}
+document.getElementById("love").onclick = function(){
+    love()
 }
 }
