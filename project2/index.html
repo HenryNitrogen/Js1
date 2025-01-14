@@ -9,6 +9,7 @@
 <body>
     <script>
         function bank(){
+            let WMoney
             let money = 0
             for(let i = 0;i< 100;i++){
             alert("选择操作")
@@ -18,22 +19,25 @@
                     money = money + +prompt("请输入存款金额")
                     break
                 case 2:
-                    let WMony=  +prompt("请输入取款金额")
-                    if (money >= WMOney){
+                case 4:
+                    WMoney= +prompt("请输入取款金额")
+                    if (money >= WMoney){
                         money = money - WMoney
-                        alert(`成功取出${WMoney}`)
+                        alert(`成功取出${WMoney}
+你的余额为${money}`)
+                        
+                    WMoney = 0
+
                         
                     } else{
                         alert("想屁吃")
                         
                     }
-                    
                     break
+                    
+                    
                 case 3:
                     alert(`你的余额为${money}`)
-                    break
-                case 4:
-                    money = money - +prompt("请输入转账金额")
                     break
                 case 5:
                     break
