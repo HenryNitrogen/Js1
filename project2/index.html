@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+</style>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function bank(){
+            let money = 0
+            for(let i = 0;i< 100;i++){
+            alert("选择操作")
+            let act = +prompt("1.存款 2.取款 3.查询余额 4.转账 5.退出")
+            switch(act){
+                case 1:
+                    money = money + +prompt("请输入存款金额")
+                    break
+                case 2:
+                    let WMony=  +prompt("请输入取款金额")
+                    if (money >= WMOney){
+                        money = money - WMoney
+                        alert(`成功取出${WMoney}`)
+                        
+                    } else{
+                        alert("想屁吃")
+                        
+                    }
+                    
+                    break
+                case 3:
+                    alert(`你的余额为${money}`)
+                    break
+                case 4:
+                    money = money - +prompt("请输入转账金额")
+                    break
+                case 5:
+                    break
+            }
+            }
+            
+        }
+        bank()
+    </script>
+</body>
+</html>
