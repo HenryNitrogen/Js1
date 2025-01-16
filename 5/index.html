@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>99乘法表</title>
+    <style>
+        span {
+            display: inline-block;
+            padding: 5px 10px;
+            margin:0 4px;
+            border: 1px solid pink;
+            box-shadow: 2px 2px 2px pink;
+            color: hotpink;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        for(let i = 1; i <=9; i++){
+            for(let j=1; j<=i; j++){
+                document.write(`<span>${i}X${j} = ${i*j}&nbsp;&nbsp;</span>`)
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+
+</html>
