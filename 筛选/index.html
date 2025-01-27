@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <script>
+            let num = []
+            let a
+            let i
+            let b = []
+            while (a !== "s") {
+                a = prompt("Please enter a number or 's' to stop");
+                if(a !== "s") {
+                num.push(a);
+                }
+            }
+            for(i=0; i < num.length; i++) {
+                if(num[i] <= 10){
+                    b.push(num[i])
+                }
+            }
+            alert(b)
+        </script>
+    </body>
+</html>
