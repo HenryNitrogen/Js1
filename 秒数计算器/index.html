@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            (function(){
+                let num = +prompt("please enter a num")
+                s=parseInt(num%60)
+                m=parseInt(num/60%60)
+                h=parseInt(num/60/60%24)
+                if(s<10){
+                    s = "0" + s
+                }
+                if(m<10){
+                    m = "0" +m
+                }
+                if(h<10){
+                    h = "0" + h
+                }
+                document.write(`<h1>${num} = ${s} second(s), ${m} minite(s), and ${h} hour(s)</h1>`)
+            })();
+
+            (function(){
+                let num = +prompt("please enter a num")
+                h=parseInt(num*24)
+                m=parseInt(num*24*60)
+                s=parseInt(num*24*60*60)
+                
+                
+                if(s<10){
+                    s = "0" + s
+                }
+                if(m<10){
+                    m = "0" +m
+                }
+                if(h<10){
+                    h = "0" + h
+                }
+                document.write(`<h1>${num} = ${s} second(s), ${m} minite(s), and ${h} hour(s)</h1>`)
+            })()
+        </script>
+    </body>
+</html>
