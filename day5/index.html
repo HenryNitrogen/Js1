@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 600px;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        tr {
+            height: 40px;
+            cursor: pointer;
+        }
+
+        table tr:nth-child(1) {
+            background-color: #ddd;
+        }
+
+        table tr:not(:first-child):hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>学生信息</h2>
+    <p>将数据渲染到页面中...</p>
+
+    <table>
+        <caption>学生列表</caption>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>籍贯</th>
+        </tr>
+        <script>
+            let student = [
+                {name:"小明",age:"19",gender:"male", hometown:"河北" },
+                {name:"小红", age:"20", gender:"female", hometown:"山东"},
+                {name:"小李", age:"21", gender:"male", hometown:"广东"},
+                {name:"小张", age:"22", gender:"female", hometown:"浙江"},
+                {name:"小王", age:"23", gender:"male", hometown:"江苏"},
+                {name:"小刘", age:"24", gender:"female", hometown:"福建"},
+                {name:"小赵", age:"25", gender:"male", hometown:"河南"}
+            ]
+            for(i = 0; i < student.length ; i++){
+                document.write(`<tr>`)
+                for(k in student[i]){
+                    document.write(`<td>${student[i][k]}</td>`)
+                }
+                document.write(`</tr>`)
+                
+            }
+        </script>
+    </table>
+
+
+</body>
+
+</html>

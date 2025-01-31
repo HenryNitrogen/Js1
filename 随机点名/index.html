@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<htnl>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            const random = parseInt(Math.random()*11)+1
+            let sta=false
+            let input = +prompt("猜1-10数字")
+
+            while(!sta){ 
+            if(random === input){
+                alert("对了")
+                sta=true
+            }else{
+                if(random < input){
+                    alert("大了")
+                }else{
+                    alert("小了")
+                }
+                input = +prompt("猜1-10数字")
+            }
+            }
+        </script>
+    </body>
+</htnl>
